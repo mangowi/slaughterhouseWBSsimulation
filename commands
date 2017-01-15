@@ -1,0 +1,19 @@
+    java2wsdl -cn com.sdj3.slaughterhouse.service.SlaughterHouseWebService -of SlaughterHouseWebService.wsdl
+
+Move wsdl then create
+
+Skeleton
+       wsdl2java -uri SlaughterHouseWebService.wsdl -p com.sdj3.slaughterhouse.service.skeleton -d adb -s -ss -sd -ssi
+      
+Implement and Build project
+ 
+    ant jar.server
+MOve to axis2 repository   
+
+
+Stub Create stub of wsd
+
+    wsdl2java -uri http://localhost:8888/axis2/services/SlaughterHouseWebService?wsdl  -p com.sdj3.slaughterhouse.stub -d adb -s
+        wsdl2java -uri SlaughterHouseWebService.wsdl  -p com.sdj3.slaughterhouse.stub -d adb -s
+    
+

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://service.slaughterhouse.sdj3.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" targetNamespace="http://service.slaughterhouse.sdj3.com">
+    <wsdl:types>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://service.slaughterhouse.sdj3.com">
+            <xs:element name="withDrawAnimal">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="withDrawAnimalResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="removeTrayById">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="removeTrayByIdResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="registerTray">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string"/>
+                        <xs:element name="args2" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="registerSuperMarket">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="registerParts">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string"/>
+                        <xs:element name="args2" type="xs:double"/>
+                        <xs:element name="args3" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="registerAnimal">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element name="args1" type="xs:double"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getTrayById">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getTrayByIdResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPackage">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPackageResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllTrayId">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllTrayIdResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllSuperMarket">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllSuperMarketResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllPartId">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllPartIdResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllPackageId">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllPackageIdResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllAniamlId">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getAllAniamlIdResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deliverToMarket">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="deliverToMarketResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="createPackage">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string"/>
+                        <xs:element minOccurs="0" name="args1" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getPackageRequest">
+        <wsdl:part name="parameters" element="ns:getPackage"/>
+    </wsdl:message>
+    <wsdl:message name="getPackageResponse">
+        <wsdl:part name="parameters" element="ns:getPackageResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getAllPackageIdRequest">
+        <wsdl:part name="parameters" element="ns:getAllPackageId"/>
+    </wsdl:message>
+    <wsdl:message name="getAllPackageIdResponse">
+        <wsdl:part name="parameters" element="ns:getAllPackageIdResponse"/>
+    </wsdl:message>
+    <wsdl:message name="deliverToMarketRequest">
+        <wsdl:part name="parameters" element="ns:deliverToMarket"/>
+    </wsdl:message>
+    <wsdl:message name="deliverToMarketResponse">
+        <wsdl:part name="parameters" element="ns:deliverToMarketResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getAllSuperMarketRequest">
+        <wsdl:part name="parameters" element="ns:getAllSuperMarket"/>
+    </wsdl:message>
+    <wsdl:message name="getAllSuperMarketResponse">
+        <wsdl:part name="parameters" element="ns:getAllSuperMarketResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getAllAniamlIdRequest">
+        <wsdl:part name="parameters" element="ns:getAllAniamlId"/>
+    </wsdl:message>
+    <wsdl:message name="getAllAniamlIdResponse">
+        <wsdl:part name="parameters" element="ns:getAllAniamlIdResponse"/>
+    </wsdl:message>
+    <wsdl:message name="createPackageRequest">
+        <wsdl:part name="parameters" element="ns:createPackage"/>
+    </wsdl:message>
+    <wsdl:message name="getTrayByIdRequest">
+        <wsdl:part name="parameters" element="ns:getTrayById"/>
+    </wsdl:message>
+    <wsdl:message name="getTrayByIdResponse">
+        <wsdl:part name="parameters" element="ns:getTrayByIdResponse"/>
+    </wsdl:message>
+    <wsdl:message name="registerTrayRequest">
+        <wsdl:part name="parameters" element="ns:registerTray"/>
+    </wsdl:message>
+    <wsdl:message name="getAllPartIdRequest">
+        <wsdl:part name="parameters" element="ns:getAllPartId"/>
+    </wsdl:message>
+    <wsdl:message name="getAllPartIdResponse">
+        <wsdl:part name="parameters" element="ns:getAllPartIdResponse"/>
+    </wsdl:message>
+    <wsdl:message name="registerPartsRequest">
+        <wsdl:part name="parameters" element="ns:registerParts"/>
+    </wsdl:message>
+    <wsdl:message name="removeTrayByIdRequest">
+        <wsdl:part name="parameters" element="ns:removeTrayById"/>
+    </wsdl:message>
+    <wsdl:message name="removeTrayByIdResponse">
+        <wsdl:part name="parameters" element="ns:removeTrayByIdResponse"/>
+    </wsdl:message>
+    <wsdl:message name="registerSuperMarketRequest">
+        <wsdl:part name="parameters" element="ns:registerSuperMarket"/>
+    </wsdl:message>
+    <wsdl:message name="getAllTrayIdRequest">
+        <wsdl:part name="parameters" element="ns:getAllTrayId"/>
+    </wsdl:message>
+    <wsdl:message name="getAllTrayIdResponse">
+        <wsdl:part name="parameters" element="ns:getAllTrayIdResponse"/>
+    </wsdl:message>
+    <wsdl:message name="registerAnimalRequest">
+        <wsdl:part name="parameters" element="ns:registerAnimal"/>
+    </wsdl:message>
+    <wsdl:message name="withDrawAnimalRequest">
+        <wsdl:part name="parameters" element="ns:withDrawAnimal"/>
+    </wsdl:message>
+    <wsdl:message name="withDrawAnimalResponse">
+        <wsdl:part name="parameters" element="ns:withDrawAnimalResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="SlaughterHouseWebServicePortType">
+        <wsdl:operation name="getPackage">
+            <wsdl:input message="ns:getPackageRequest" wsaw:Action="urn:getPackage"/>
+            <wsdl:output message="ns:getPackageResponse" wsaw:Action="urn:getPackageResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getAllPackageId">
+            <wsdl:input message="ns:getAllPackageIdRequest" wsaw:Action="urn:getAllPackageId"/>
+            <wsdl:output message="ns:getAllPackageIdResponse" wsaw:Action="urn:getAllPackageIdResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="deliverToMarket">
+            <wsdl:input message="ns:deliverToMarketRequest" wsaw:Action="urn:deliverToMarket"/>
+            <wsdl:output message="ns:deliverToMarketResponse" wsaw:Action="urn:deliverToMarketResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getAllSuperMarket">
+            <wsdl:input message="ns:getAllSuperMarketRequest" wsaw:Action="urn:getAllSuperMarket"/>
+            <wsdl:output message="ns:getAllSuperMarketResponse" wsaw:Action="urn:getAllSuperMarketResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getAllAniamlId">
+            <wsdl:input message="ns:getAllAniamlIdRequest" wsaw:Action="urn:getAllAniamlId"/>
+            <wsdl:output message="ns:getAllAniamlIdResponse" wsaw:Action="urn:getAllAniamlIdResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createPackage">
+            <wsdl:input message="ns:createPackageRequest" wsaw:Action="urn:createPackage"/>
+        </wsdl:operation>
+        <wsdl:operation name="getTrayById">
+            <wsdl:input message="ns:getTrayByIdRequest" wsaw:Action="urn:getTrayById"/>
+            <wsdl:output message="ns:getTrayByIdResponse" wsaw:Action="urn:getTrayByIdResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="registerTray">
+            <wsdl:input message="ns:registerTrayRequest" wsaw:Action="urn:registerTray"/>
+        </wsdl:operation>
+        <wsdl:operation name="getAllPartId">
+            <wsdl:input message="ns:getAllPartIdRequest" wsaw:Action="urn:getAllPartId"/>
+            <wsdl:output message="ns:getAllPartIdResponse" wsaw:Action="urn:getAllPartIdResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="registerParts">
+            <wsdl:input message="ns:registerPartsRequest" wsaw:Action="urn:registerParts"/>
+        </wsdl:operation>
+        <wsdl:operation name="removeTrayById">
+            <wsdl:input message="ns:removeTrayByIdRequest" wsaw:Action="urn:removeTrayById"/>
+            <wsdl:output message="ns:removeTrayByIdResponse" wsaw:Action="urn:removeTrayByIdResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="registerSuperMarket">
+            <wsdl:input message="ns:registerSuperMarketRequest" wsaw:Action="urn:registerSuperMarket"/>
+        </wsdl:operation>
+        <wsdl:operation name="getAllTrayId">
+            <wsdl:input message="ns:getAllTrayIdRequest" wsaw:Action="urn:getAllTrayId"/>
+            <wsdl:output message="ns:getAllTrayIdResponse" wsaw:Action="urn:getAllTrayIdResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="registerAnimal">
+            <wsdl:input message="ns:registerAnimalRequest" wsaw:Action="urn:registerAnimal"/>
+        </wsdl:operation>
+        <wsdl:operation name="withDrawAnimal">
+            <wsdl:input message="ns:withDrawAnimalRequest" wsaw:Action="urn:withDrawAnimal"/>
+            <wsdl:output message="ns:withDrawAnimalResponse" wsaw:Action="urn:withDrawAnimalResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="SlaughterHouseWebServiceSoap11Binding" type="ns:SlaughterHouseWebServicePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="deliverToMarket">
+            <soap:operation soapAction="urn:deliverToMarket" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllPackageId">
+            <soap:operation soapAction="urn:getAllPackageId" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getPackage">
+            <soap:operation soapAction="urn:getPackage" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllSuperMarket">
+            <soap:operation soapAction="urn:getAllSuperMarket" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllAniamlId">
+            <soap:operation soapAction="urn:getAllAniamlId" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createPackage">
+            <soap:operation soapAction="urn:createPackage" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getTrayById">
+            <soap:operation soapAction="urn:getTrayById" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerTray">
+            <soap:operation soapAction="urn:registerTray" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getAllPartId">
+            <soap:operation soapAction="urn:getAllPartId" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerParts">
+            <soap:operation soapAction="urn:registerParts" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="removeTrayById">
+            <soap:operation soapAction="urn:removeTrayById" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerSuperMarket">
+            <soap:operation soapAction="urn:registerSuperMarket" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getAllTrayId">
+            <soap:operation soapAction="urn:getAllTrayId" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerAnimal">
+            <soap:operation soapAction="urn:registerAnimal" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="withDrawAnimal">
+            <soap:operation soapAction="urn:withDrawAnimal" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="SlaughterHouseWebServiceSoap12Binding" type="ns:SlaughterHouseWebServicePortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="deliverToMarket">
+            <soap12:operation soapAction="urn:deliverToMarket" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllPackageId">
+            <soap12:operation soapAction="urn:getAllPackageId" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getPackage">
+            <soap12:operation soapAction="urn:getPackage" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllSuperMarket">
+            <soap12:operation soapAction="urn:getAllSuperMarket" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllAniamlId">
+            <soap12:operation soapAction="urn:getAllAniamlId" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createPackage">
+            <soap12:operation soapAction="urn:createPackage" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getTrayById">
+            <soap12:operation soapAction="urn:getTrayById" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerTray">
+            <soap12:operation soapAction="urn:registerTray" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getAllPartId">
+            <soap12:operation soapAction="urn:getAllPartId" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerParts">
+            <soap12:operation soapAction="urn:registerParts" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="removeTrayById">
+            <soap12:operation soapAction="urn:removeTrayById" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerSuperMarket">
+            <soap12:operation soapAction="urn:registerSuperMarket" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getAllTrayId">
+            <soap12:operation soapAction="urn:getAllTrayId" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerAnimal">
+            <soap12:operation soapAction="urn:registerAnimal" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="withDrawAnimal">
+            <soap12:operation soapAction="urn:withDrawAnimal" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="SlaughterHouseWebServiceHttpBinding" type="ns:SlaughterHouseWebServicePortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="deliverToMarket">
+            <http:operation location="deliverToMarket"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllPackageId">
+            <http:operation location="getAllPackageId"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getPackage">
+            <http:operation location="getPackage"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllSuperMarket">
+            <http:operation location="getAllSuperMarket"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAllAniamlId">
+            <http:operation location="getAllAniamlId"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="createPackage">
+            <http:operation location="createPackage"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getTrayById">
+            <http:operation location="getTrayById"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerTray">
+            <http:operation location="registerTray"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getAllPartId">
+            <http:operation location="getAllPartId"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerParts">
+            <http:operation location="registerParts"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="removeTrayById">
+            <http:operation location="removeTrayById"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerSuperMarket">
+            <http:operation location="registerSuperMarket"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getAllTrayId">
+            <http:operation location="getAllTrayId"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="registerAnimal">
+            <http:operation location="registerAnimal"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="withDrawAnimal">
+            <http:operation location="withDrawAnimal"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="SlaughterHouseWebService">
+        <wsdl:port name="SlaughterHouseWebServiceHttpSoap11Endpoint" binding="ns:SlaughterHouseWebServiceSoap11Binding">
+            <soap:address location="http://localhost:8080/axis2/services/SlaughterHouseWebService"/>
+        </wsdl:port>
+        <wsdl:port name="SlaughterHouseWebServiceHttpSoap12Endpoint" binding="ns:SlaughterHouseWebServiceSoap12Binding">
+            <soap12:address location="http://localhost:8080/axis2/services/SlaughterHouseWebService"/>
+        </wsdl:port>
+        <wsdl:port name="SlaughterHouseWebServiceHttpEndpoint" binding="ns:SlaughterHouseWebServiceHttpBinding">
+            <http:address location="http://localhost:8080/axis2/services/SlaughterHouseWebService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
